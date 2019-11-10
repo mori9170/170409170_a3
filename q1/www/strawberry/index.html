@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel = "stylesheet" type = "text/css" href = "../css/stylesheet.css" />
+    <link rel='icon' href='../img/favicon.png' type='image/x-icon'/ >
+    <script src="../js/app.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      newdiv(displaydiv,div2,div3,div4);
+    </script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="http://wlu-cp202.appspot.com/CP202/Fall2019/shopping_cart_v1/cart.js" async></script>
+
+    <!-- YOU MUST MODIFY THIS VALUE TO POINT TO YOUR ACTUAL CHECKOUT PAGE -->
+    <script>localStorage.checkoutURL = '../checkout.html';</script>
+
+  </head>
+  <body>
+
+    <div class='straw-wrapper'>
+      <div class = "header">
+        <div class="headers1">
+          <a href="../index.html">
+            <img src="../img/DD-Logo.png" alt="DynamiteDonuts Logo">
+            </img>
+          </a>
+        </div>
+        <div class="headers2">
+          <ul class="breadcrumb">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../product-page/index.html">Products</a></li>
+            <li><a href="index.html">Strawberry</a></li>
+            <li><a href="../vanilla/index.html">Vanilla</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class = "straw-contentwrap">
+
+        <!-- PICTURES SECTION -->
+        <section class="straw-s1">
+          <div class="straws1-big">
+            <div id="jelly-filled" class="sprod1">
+              <div class="imagecont">
+                <img src="../img/s-jelly.png" alt="Strawberry Jelly Donut"></img>
+              </div>
+            </div>
+            <div id="big-sprinkles" class="sprod1">
+              <div class="imagecont">
+                <img src="../img/s-bigsprink.png" alt="Strawbery Big Sprinkles Donut"></img>
+              </div>
+            </div>
+            <div id="small-sprinkles" class="sprod1">
+              <div class="imagecont">
+                <img src="../img/s-sprinkle.png" alt="Strawbery Small Sprinkles Donut"></img>
+              </div>
+            </div>
+            <div id="lined-icing" class="sprod1">
+              <div class="imagecont">
+                <img src="../img/s-lined.png" alt="Strawbery Donut with lined icing"></img>
+              </div>
+            </div>
+          </div>
+
+          <!-- PICKER SECTION -->
+          <div class="straws1-small">
+
+            <div class="sprodpicker">
+              <div class="sprodpicks1">
+                <h3>Take your pick!</h3>
+              </div>
+              <div class="sprodpicks2">
+                <div class='quartercontainer'>
+                  <a href="javascript:newdiv('jelly-filled','big-sprinkles','small-sprinkles','lined-icing')">
+                    Jelly Filled
+                  </a>
+                  <a href="javascript:newdiv('big-sprinkles','jelly-filled','small-sprinkles','lined-icing')">
+                    Big Sprinkles
+                  </a>
+                </div>
+                <div class='quartercontainer'>
+                  <a href="javascript:newdiv('small-sprinkles','big-sprinkles','jelly-filled','lined-icing')">
+                    Small Sprinkles
+                  </a>
+                  <a href="javascript:newdiv('lined-icing','small-sprinkles','big-sprinkles','jelly-filled')">
+                    Lined Icing
+                  </a>
+                </div>
+
+              </div>
+            </div>
+            <button onclick="clientAddItemToCart({prodName: 'Strawberry', prodDesc: 'Strawberry Donut', prodPrice: '5.00', prodQty: '3'});"> ADD ME TO YOUR CART </button>
+          </div>
+
+        </section>
+
+
+
+      </div>
+      <section class="straw-footer">
+      </section>
+
+
+    </div>
+
+  </body>
+</html>

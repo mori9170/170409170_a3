@@ -1,0 +1,585 @@
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+}
+
+.site-wrapper {
+  width:100%;
+  height:104vw;
+  background: orange;
+  margin: none;
+}
+
+.header {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  flex-direction: row;
+}
+
+.headers1 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background: beige;
+}
+
+.headers1 a {
+  height: 100%;
+  width: 33%;
+  display: block;
+}
+
+.headers1 img {
+  transform: translateX(35%);
+  max-height: calc(100%-1vw);
+  max-width: calc(100%-1vw);
+}
+
+.headers2 {
+  background: beige;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  font-family: Arial, sans-serif;
+  letter-spacing: 2px;
+  display: flex;
+  flex-direction: row;
+}
+
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 1.4vw;
+  padding: 20px;
+}
+
+ul.breadcrumb li a {
+  text-decoration: none;
+  color: black;
+}
+
+ul.breadcrumb li a:hover {
+  font-weight: bold;
+}
+
+
+/* SECTION 1 CONTENT */
+
+.s1 {
+  width: 100%;
+  height: 40%;
+  background: white;
+  display: flex;
+  flex-direction: row;
+
+}
+
+
+
+.s1sub1 {
+  width: 57%;
+  height: 100%;
+  background: beige;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* overflow: visible; */
+  font-family: "Optima", sans-serif;
+  font-weight: 100;
+}
+
+
+.sub1text1 {
+  width:100%;
+  height: auto;
+  margin: 0;
+  font-size: 5vw;
+  transform: translateY(-70%);
+
+}
+
+.sub1text1 h2 {
+  padding: 0;
+  margin: 0;
+
+}
+
+.sub1text2 {
+  width:82%;
+  margin: 0;
+  transform: translateY(-40%);
+  font-size: 1.1vw;
+}
+
+.sub1text2 h2 {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.s1sub2 {
+  width: 43%;
+  height: 100%;
+  background: beige;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.sub2img {
+  width: 100%;
+  height: 75%;
+}
+
+.s1sub1 button {
+  height: 3vw;
+  border-radius: 10px;
+  font-family: Arial;
+  font-weight: bold;
+}
+
+/* =============SECTION 2 CONTENT============= */
+
+.s2 {
+  width: 100%;
+  height: 46%;
+  background: #FAFAFA;
+  display: flex;
+  flex-direction: row;
+}
+
+/* SUBSECTION 1 */
+
+.s2sub1 {
+  width: 50%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.s2sub1 h3 {
+  font-size: 3.2vw;
+  font-family: "Optima", sans-serif;
+}
+
+.s2sub1 a {
+  display: block;
+  width: 90%;
+  height: 100%;
+  margin-bottom: 32px;
+  text-decoration: none;
+  color: black;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 1.45vw;
+}
+
+.s2sub1 a button {
+  height: 4vw;
+  background: #c70021;
+  border-radius: 15px;
+
+}
+
+.s2sub1 p {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+
+.rounded-container{
+  width: 100%;
+  height: 100%;
+  background: beige;
+  border-radius: 30px;
+  border: #333333 2px solid;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pic-wrapper {
+  width:100%;
+  height: 33%;
+  margin-top: 12%;
+  margin-bottom: 5%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.rounded-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* SUBSECTION 2 */
+
+.s2sub2 {
+  width: 50%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.s2sub2 h3 {
+  font-size: 3.2vw;
+  font-family: "Optima", sans-serif;
+}
+
+.s2sub2 a {
+  display: block;
+  width: 90%;
+  height: 100%;
+  margin-bottom: 32px;
+  text-decoration: none;
+  color: black;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 1.45vw;
+}
+
+.s2sub2 p {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.s2sub2 a button {
+  height: 4vw;
+  background: white;
+  border-radius: 15px;
+
+}
+
+
+.main-footer {
+  width: 100%;
+  height: 15%;
+  background: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footeritem {
+  height: 40%;
+  width: 33%;
+  text-align: center;
+  font-size: 1.5vw;
+}
+
+/* ============= STRAWBERRY PAGE================ */
+
+
+.straw-wrapper {
+  width:100%;
+  height:68vw;
+  background: orange;
+  margin: none;
+}
+
+.straw-wrapper .header {
+  height: 8%;
+}
+
+.straw-contentwrap {
+  width: 100%;
+  height: 82%;
+  background: #FAFAFA;
+}
+
+.straw-footer {
+  background: beige;
+  width:100%;
+  height: 10%;
+
+}
+
+
+.straw-s1 {
+  width:100%;
+  height: 100%;
+  /* background: green; */
+  display: flex;
+  flex-direction: row;
+}
+
+.straws1-big {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.straws1-small {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.straws1-small button {
+  margin-top: 5%;
+}
+
+
+.sprod1 {
+  height: 70%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px black dotted;
+}
+
+.sprod1 .imagecont {
+  height: 35vw;
+  width: 35vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#big-sprinkles {
+  background: #FAFAFA;
+  display: none;
+}
+
+#jelly-filled {
+  background: #FAFAFA;
+
+}
+
+#small-sprinkles {
+  background: #FAFAFA;
+  display: none;
+}
+
+#lined-icing {
+  background: #FAFAFA;
+  display: none;
+}
+
+
+.sprodpicker {
+  height: 20vw;
+  width: 30vw;
+  background: white;
+  padding: 0;
+}
+
+.sprodpicks1 {
+  height:33%;
+  width: 100%;
+  text-align: center;
+  font-size: 2vw;
+  font-family: "Optima", sans-serif;
+  text-decoration: underline;
+}
+
+.sprodpicks1 h3 {
+  padding: 5%;
+  margin: 0;
+}
+
+.sprodpicks2 {
+  height:66%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.quartercontainer {
+  height:50%;
+  width: 100%;
+}
+
+.sprodpicks2 a {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: red;
+  font-size: 1.5vw;
+  font-family: Arial, sans-serif;
+}
+
+.sprodpicks2 a:hover {
+  font-weight: bold;
+}
+
+
+
+/* ============== PRODUCT PAGE ============== */
+
+
+
+.prodpage-wrapper {
+  min-height: 755px;
+  height: 50vw;
+  background: orange;
+  display: flex;
+  flex-direction: column;
+}
+
+.prodpage-wrapper .header {
+  height: 7.5%;
+
+}
+
+.prodpage-wrapper .s2 {
+  height: 82.5%;
+}
+
+
+.prod-footer {
+  width:100%;
+  height: 10%;
+  background: beige;
+
+}
+
+.prodpage-wrapper .s2 a {
+  height: 50vw;
+}
+
+
+.prodpage-wrapper .s2 .rounded-container {
+  justify-content: center;
+}
+
+
+
+
+
+/* =============MEDIA TAGS========= */
+
+
+@media only screen and (max-width: 812px) {
+  .site-wrapper {
+    height: 160vw;
+  }
+  .s2 {
+    flex-direction: column;
+  }
+  .s2sub1 {
+    width: 100%;
+  }
+  .s2sub2 {
+    width: 100%;
+  }
+  .pic-wrapper {
+    margin-top: 1%;
+  }
+  /* strawberry sections */
+  .straw-wrapper {
+    height: 150vw;
+
+  }
+
+
+
+  .straw-s1 {
+    flex-direction: column;
+  }
+
+  .straws1-big {
+    width: 100%;
+    height: 70%
+  }
+
+  .straws1-small {
+    width: 100%;
+    height: 30%;
+  }
+
+  .sprodpicker {
+    height: 25vw;
+    width: 50vw;
+    transform: translateY(-30%);
+  }
+
+
+  /* product page */
+
+
+  .prodpage-wrapper {
+    height: 175vw;
+  }
+
+  .prodpage-wrapper .s2 img {
+    margin-top: 10%;
+  }
+
+  .footeritem {
+    width: 45%;
+    font-size: 2vw;
+  }
+
+}
+
+
+
+
+
+
+
+/* <SHOPPING_CART> */
+#cart-button:link {
+  color: red !important;
+}
+
+#cart-button:visited {
+  color: white;
+}
+
+#cart-button:hover {
+  color: white !important;
+}
+
+#cart-button:active {
+  color: white;
+}
+
+.delete-icon {
+  color: red !important;
+}
+
+.delete-icon:hover {
+  color: red !important;
+}
+/* </SHOPPING_CART> */

@@ -1,0 +1,126 @@
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+#avatar {
+  max-height: 155px;
+  max-width: 155px;
+}
+
+
+
+.page-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 70px;
+  align-items: center;
+}
+
+.web-wrapper {
+  width: 935px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* HEADER SECTION */
+
+.header-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 60px;
+}
+
+
+.header_s-img {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hs-imgcontainer {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.header_s-content {
+  width: 66%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* custom text for user and bio */
+
+
+#username {
+  font-size: 28px;
+  font-family: Verdana, Arial;
+}
+
+#bio {
+  font-size: 14px;
+  font-family: Verdana, Arial;
+}
+
+
+/* CONTENT SECTION - have the overflow be able to move divs to the next level as it gets smaller */
+
+
+.content-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+.post {
+  margin: 5px;
+  height: 293px;
+  width:293px;
+}
+
+.post img {
+  max-width: 293px;
+  max-height: 293px;
+}
+
+
+
+/* media tags */
+
+
+@media only screen and (max-width: 768px) {
+  .web-wrapper {
+    width: 625px;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+  .web-wrapper {
+    width: 300px;
+  }
+  .header_s-img {
+    width: 100%;
+  }
+  .header-wrapper {
+    flex-direction: column;
+  }
+  .header_s-content {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #bio {
+    display: none;
+  }
+}

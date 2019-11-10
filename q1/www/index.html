@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel = "stylesheet" type = "text/css" href = "css/stylesheet.css" />
+    <link rel='icon' href='img/favicon.png' type='image/x-icon'/ >
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="http://wlu-cp202.appspot.com/CP202/Fall2019/shopping_cart_v1/cart.js" async></script>
+
+    <!-- YOU MUST MODIFY THIS VALUE TO POINT TO YOUR ACTUAL CHECKOUT PAGE -->
+    <script>localStorage.checkoutURL = 'checkout.html';</script>
+
+  </head>
+  <body>
+    <div class = "site-wrapper">
+
+
+      <div class = "header">
+        <div class="headers1">
+          <a href="index.html">
+            <img src="img/DD-Logo.png" alt="logo"></img>
+
+          </a>
+        </div>
+        <div class="headers2">
+          <ul class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product-page/index.html">Products</a></li>
+            <li><a href="strawberry/index.html">Strawberry</a></li>
+            <li><a href="vanilla/index.html">Vanilla</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="s1">
+        <div class="s1sub1">
+
+          <!-- <div class="sub1text1">
+            <h2>Made Local</h2>
+          </div> -->
+          <div class="sub1text2">
+            <h2>We pride ourselves on bringing you the best donuts from local farmers.
+              When you support us you're supporting your neighbours and family friends too.
+              Shop local, shop DynamiteDonuts.</h2>
+          </div>
+
+          <a href="product-page/index.html">
+            <button>SHOP OUR PRODUCTS</button>
+          </a>
+
+
+        </div>
+        <div class="s1sub2">
+          <div class="sub2img">
+            <img src="img/donut-file1.png" alt="big donut">
+            </img>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="s2">
+
+        <div class="s2sub1">
+          <h3>Vanilla</h3>
+          <a onclick="clientAddItemToCart({prodName: 'Vanilla', prodDesc: 'Vanilla Donut', prodPrice: '5.00', prodQty: '3'});">
+            <div class="rounded-container">
+              <div class='pic-wrapper'>
+                <img src='img/vanilla-donuts.png' alt="All of our Vanilla Donuts"></img>
+                <p>A flavour as creamy as it looks. Using a homemade crushed vanilla
+                  extract we guaruntee that you'll love these for any plethora of events.</p>
+                <button>ADD TO CART</button>
+              </div>
+
+            </div>
+
+
+          </a>
+
+        </div>
+
+        <div class="s2sub2">
+          <h3>Strawberry</h3>
+          <a onclick="clientAddItemToCart({prodName: 'Strawberry', prodDesc: 'Strawberry Donut', prodPrice: '5.00', prodQty: '3'});">
+            <div class="rounded-container">
+              <div class='pic-wrapper'>
+                <img src='img/strawberry-donuts.png' alt="All of our Strawbery Donuts"></img>
+                <p>Made using fresh hand-picked and puree'd strawberries, our strawberry donuts are fruity
+                  and made with a very light dough. If you could eat a fruity cloud this would be it.</p>
+                <button>ADD TO CART</button>
+              </div>
+            </div>
+          </a>
+        </div>
+
+
+
+
+
+      </div>
+      <div class="main-footer">
+        <div class='footeritem'>
+          <h5>Visit us in store at: 555 nonexistant avenue, nowhereville!<br> We can't wait to see you!</h5>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>
